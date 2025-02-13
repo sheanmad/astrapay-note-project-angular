@@ -1,0 +1,14 @@
+<div class="note-list">
+    <h1>Notes</h1>
+    <button (click)="addNote()">Add</button>
+    <ul>
+      <li *ngFor="let note of notes">
+        <span>{{ note.title }}</span>
+        <button (click)="editNote(note.id)">Edit</button>
+        <button (click)="deleteNotes(note.id)">Delete</button>
+      </li>
+    </ul>
+    <div *ngIf="notes.length === 0">
+      <p>No notes available.</p>
+    </div>
+</div>
