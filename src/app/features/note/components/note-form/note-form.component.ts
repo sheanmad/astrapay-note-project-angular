@@ -26,8 +26,8 @@ export class NoteFormComponent implements OnInit{
     const id = this.route.snapshot.paramMap.get('id');
     if(id){
       this.isEdit = true;
-      this.noteService.getNoteById(+id).then((response) => {
-        this.note = response.data;
+      this.noteService.getNoteById(+id).then((data) => {
+        this.note = data;
       }).catch(error => {
         console.error('Error fetching note:', error);
       });
