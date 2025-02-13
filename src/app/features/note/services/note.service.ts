@@ -23,10 +23,10 @@ export class NoteService {
   return ApiService.get<{ status: string; messages: string[]; data: any }>(this.endpoint, `/${id}`)
     .then(response => {
       if (response.status === 'Success') {
-        return response.data; // Return the note data
+        return response.data;
       } else {
         console.error('Failed to fetch note:', response.messages);
-        return null; // Return null if the note is not found
+        return null;
       }
     });  }
 
