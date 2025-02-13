@@ -59,9 +59,15 @@ The application interacts with a backend API to manage notes. The following endp
 - **DELETE /api/notes/:id**: Delete a note by ID.
 
 ## Screenshots
-![Image](https://github.com/user-attachments/assets/0396ede8-5570-4c54-bc6e-221095d65802)
-![Image](https://github.com/user-attachments/assets/46a010a4-7741-4532-a478-77e9935aaf75)
+- **Empty Note**
 ![Image](https://github.com/user-attachments/assets/8a2157f3-46bb-4ec9-a1b0-0a886a5721c7)
+- **Six Notes**
 ![Image](https://github.com/user-attachments/assets/180cc864-209d-4da0-8e6d-908824b97a57)
+- **Note Detail**
+![Image](https://github.com/user-attachments/assets/0396ede8-5570-4c54-bc6e-221095d65802)
+- **Six Notes After Edited**
 ![Image](https://github.com/user-attachments/assets/e2c89b9e-3bcd-4b6a-9734-70235570091b)
+- **Edit Note**
+![Image](https://github.com/user-attachments/assets/46a010a4-7741-4532-a478-77e9935aaf75)
+- **Add Note**
 ![Image](https://github.com/user-attachments/assets/0498f936-c483-4c46-ab11-1331c2272701)
