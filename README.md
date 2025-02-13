@@ -51,12 +51,12 @@ The application uses Angular Router for navigation. The following routes are def
   - Component: `NoteFormComponent`
 
 ## API
-The application interacts with a backend API to manage notes. The following endpoints are used:
-- **GET /api/notes**: Fetch all notes.
-- **GET /api/notes/:id**: Fetch a note by ID.
-- **POST /api/notes**: Create a new note.
-- **PUT /api/notes/:id**: Update an existing note by ID.
-- **DELETE /api/notes/:id**: Delete a note by ID.
+The application interacts with a backend API base url of `http://localhost:8000/v1` to manage notes. The following endpoints are used:
+- **GET /notes**: Fetch all notes.
+- **GET /notes/:id**: Fetch a note by ID.
+- **POST /notes**: Create a new note.
+- **PUT /notes/:id**: Update an existing note by ID.
+- **DELETE /notes/:id**: Delete a note by ID.
 
 ## Screenshots
 - **Empty Note**
