@@ -10,8 +10,6 @@ This is an Angular project designed to manage notes. It features a modular archi
 - [Routing](#routing)
 - [API](#api)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 1. Clone the repository:
