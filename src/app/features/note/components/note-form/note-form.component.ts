@@ -36,7 +36,6 @@ export class NoteFormComponent implements OnInit{
 
   saveNote(): void{
     if(this.isEdit){
-      console.log('Updating note with ID:', this.note.id);
       this.noteService.updateNote(this.note.id, this.note).then(() => {
         this.router.navigate(['/']);
       }).catch(error => {

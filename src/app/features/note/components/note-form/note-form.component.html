@@ -1,14 +1,22 @@
 <div class="note-form">
   <h1>{{ isEdit ? 'Edit Note' : 'Add Note' }}</h1>
-  <form (ngSubmit)="saveNote()">
+  <form #noteForm="ngForm" (ngSubmit)="saveNote()">
     <div>
       <label for="title">Title:</label>
-      <input type="text" id="title" [(ngModel)]="note.title" name="title" required />
+      <input type="text" id="title" [(ngModel)]="note.title" name="title" required maxlength="50" />
+      <div *ngIf="noteForm.controls['title']?.invalid && (noteForm.controls['title']?.touched || noteForm.controls['title']?.dirty)">
+        <small *ngIf="noteForm.controls['title']?.errors?.['required']">Title is mandatory.</small>
+        <small *ngIf="noteForm.controls['title']?.errors?.['maxlength']">Title cannot be longer than 50 characters.</small>
+      </div>
     </div>
     <div>
       <label for="content">Content:</label>
-      <textarea id="content" [(ngModel)]="note.content" name="content" required></textarea>
+      <textarea id="content" [(ngModel)]="note.content" name="content" required maxlength="500"></textarea>
+      <div *ngIf="noteForm.controls['content']?.invalid && (noteForm.controls['content']?.touched || noteForm.controls['content']?.dirty)">
+        <small *ngIf="noteForm.controls['content']?.errors?.['required']">Content is mandatory.</small>
+        <small *ngIf="noteForm.controls['content']?.errors?.['maxlength']">Content cannot be longer than 500 characters.</small>
+      </div>
     </div>
-    <button type="submit">{{ isEdit ? 'Update Note' : 'Create Note' }}</button>
+    <button type="submit" [disabled]="noteForm.invalid">{{ isEdit ? 'Update Note' : 'Create Note' }}</button>
   </form>
 </div>

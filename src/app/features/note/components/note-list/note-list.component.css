@@ -46,11 +46,27 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.note-list li span {
+.note-list li:hover {
+  transform: scale(1.02);
+}
+
+.note-list a {
   flex: 1;
   font-size: 16px;
   font-weight: 500;
-  color: #333;
+  color: #007bff;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.note-list a:hover {
+  color: #0056b3;
+}
+
+.note-list li div {
+  display: flex;
+  gap: 8px;
 }
 
 .note-list li button {
@@ -58,19 +74,19 @@
   padding: 5px 10px;
 }
 
-.note-list li button:nth-child(2) {
+.note-list li button:nth-child(1) {
   background: #28a745;
 }
 
-.note-list li button:nth-child(2):hover {
+.note-list li button:nth-child(1):hover {
   background: #1e7e34;
 }
 
-.note-list li button:nth-child(3) {
+.note-list li button:nth-child(2) {
   background: #dc3545;
 }
 
-.note-list li button:nth-child(3):hover {
+.note-list li button:nth-child(2):hover {
   background: #b21f2d;
 }
 

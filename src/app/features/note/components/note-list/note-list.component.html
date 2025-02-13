@@ -3,9 +3,11 @@
     <button (click)="addNote()">Add</button>
     <ul>
       <li *ngFor="let note of notes">
-        <span>{{ note.title }}</span>
-        <button (click)="editNote(note.id)">Edit</button>
-        <button (click)="deleteNotes(note.id)">Delete</button>
+        <a [routerLink]="['/notes', note.id]">{{ note.title }}</a>
+        <div>
+          <button (click)="editNote(note.id)">Edit</button>
+          <button (click)="deleteNotes(note.id)">Delete</button>
+        </div>
       </li>
     </ul>
     <div *ngIf="notes.length === 0">
