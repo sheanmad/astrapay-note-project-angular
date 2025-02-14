@@ -28,7 +28,7 @@ This is an Angular project designed to manage notes. It features a modular archi
    ```bash
    https://github.com/sheanmad/astrapay-spring-boot-external
    ```
-5. After the backend is ready you can run this Angular with:
+5. After the backend is ready, you can run this Angular with:
    ```bash
    ng serve
    ```
