@@ -24,6 +24,14 @@ This is an Angular project designed to manage notes. It features a modular archi
    ```bash
    npm install
    ```
+4. This Angular application serves as the frontend for the Spring Boot Note Project, therefore you need to run the backend which can be found at:
+   ```bash
+   https://github.com/sheanmad/astrapay-spring-boot-external
+   ```
+5. After the backend is ready you can run this Angular with:
+   ```bash
+   ng serve
+   ```
 
 ## Usage
 To run the application, use:
@@ -31,6 +39,10 @@ To run the application, use:
    ng serve
    ```
 Then open your browser and navigate to `http://localhost:4200`.
+This Angular application serves as the frontend for the Spring Boot Note Project, which can be found at:
+   ```bash
+   https://github.com/sheanmad/astrapay-spring-boot-external
+   ```
 
 ## Features
 - Create, read, update, and delete notes.
